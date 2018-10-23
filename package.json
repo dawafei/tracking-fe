@@ -1,5 +1,5 @@
 {
-  "name": "tracking-fe",
+  "name": "tracking",
   "version": "1.0.0",
   "description": "统计",
   "main": "dist/index.js",
