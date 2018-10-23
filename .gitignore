@@ -1,7 +1,6 @@
-前端统计埋点上报功能·
 .DS_Store
 node_modules
-/output
+/dist
 
 # local env files
 .env.local
