@@ -1,22 +1,13 @@
 前端统计埋点上报功能·
-.DS_Store
-node_modules
-/output
 
-# local env files
-.env.local
-.env.*.local
+简介
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+## 使用方式
 
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw*
+## 参数设置
+
+## 公共方法
+
+
+## api
+
