@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试页</title>
+</head>
+
+<body>
+    <div id="main">
+        <p>主要内容区域</p>
+        <button id="btn1">测试按钮</button>
+        <button id="btn2">测试报错</button>
+        <button id="btn3">主动发送错误信息</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var Track = {};
+        //使用jquery方式的页面
+        $(function () {
+            $("#btn1").click(function () {
+                $("body").append("<div class='test1'>主动插入内容</div>")
+            });
+            $("#btn2").click(function () {
+                throw new Error("测试报错。");
+            });
+            $("#btn3").click(function () {
+                Track.send("标题")
+            });
+        })
+    </script>
+</body>
+
+</html>
